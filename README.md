@@ -110,31 +110,4 @@ Example payload:
 }
 ```
 
-## Troubleshooting Guide
-- **LCD Not Displaying**: Verify I2C connections/address (try 0x3F if 0x27 fails), ensure power and SDA/SCL wiring.
-- **No Sensor Readings**: Check GPIO assignments, HX711 wiring, verify with multimeter.
-- **Negative Weight**: Swap A+/A- wiring or invert scale factor.
-- **Unstable Values**: Inspect connections, shield from interference, recalibrate.
-- **Single Sensor Issues**: Check mount and wiring; recalibrate individually.
-
-## Safety and Maintenance
-- Never exceed 20kg capacity.
-- Keep electronics dry and protected.
-- Use proper power supply (5V, 2.5A recommended).
-- Inspect wires, clean sensors/platform regularly.
-- Recalibrate as readings drift (every few months).
-- Update routine maintenance and firmware often.
-
-## Project Files
-- **calibration.py**: Sensor calibration wizard.
-- **weighing_machine.py**: Main weighing logic.
-- **weighing_machine_webhook.py**: Advanced IoT/webhook extension.
-- **INSTALLATION_GUIDE.md**: Step-by-step hardware and software setup.
-- **PROJECT_SUMMARY.md**: In-depth technical documentation.
-- **QUICK_REFERENCE.txt**: Wiring/config cheat sheet.
-- **pin_mapping.csv**: Pin assignment table.
-- **Wiring diagrams**: Visual connection guides.
-
 ---
-
-**Professional documentation, detailed code, and project assets ensure quick deployment and easy maintenance for the Baby Weight Station. For code details, see `calibration.py`, `weighing_machine.py`, and `weighing_machine_webhook.py` within this repo.**
